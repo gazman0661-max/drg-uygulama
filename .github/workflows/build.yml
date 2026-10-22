@@ -1,0 +1,53 @@
+name: Android Build
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Debug APK + Release AAB (unsigned)
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - run: flutter --version
+      - run: flutter pub get
+      - run: flutter analyze --no-fatal-infos --no-fatal-warnings
+
+      # Debug APK: Android'in otomatik debug anahtarıyla imzalanır
+      - name: Debug APK
+        run: flutter build apk --debug --build-number=${{ github.run_number }}
+
+      # Release AAB: imzasız (manuel imzalanacak)
+      - name: Release AAB (unsigned)
+        run: flutter build appbundle --release --build-number=${{ github.run_number }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dergah-debug-apk
+          path: build/app/outputs/flutter-apk/app-debug.apk
+          retention-days: 14
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dergah-release-aab-unsigned
+          path: build/app/outputs/bundle/release/app-release.aab
+          retention-days: 30
