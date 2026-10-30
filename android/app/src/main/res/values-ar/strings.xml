@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_description">الوقت المتبقي للصلاة القادمة ومواقيت اليوم وأوقات الكراهة</string>
+    <string name="widget_next_description">الوقت المتبقي للصلاة القادمة (صغير)</string>
+    <string name="widget_label">Dergah-ı Kadirî - المواقيت</string>
+    <string name="widget_next_label">Dergah-ı Kadirî - الصلاة القادمة</string>
+    <string name="p0">الفجر</string>
+    <string name="p1">الشروق</string>
+    <string name="p2">الظهر</string>
+    <string name="p3">العصر</string>
+    <string name="p4">المغرب</string>
+    <string name="p5">العشاء</string>
+    <string name="dat0">الفجر بعد</string>
+    <string name="dat1">الشروق بعد</string>
+    <string name="dat2">الظهر بعد</string>
+    <string name="dat3">العصر بعد</string>
+    <string name="dat4">المغرب بعد</string>
+    <string name="dat5">العشاء بعد</string>
+    <string name="kn0">الشروق</string>
+    <string name="kn1">الاستواء (وقت الزوال)</string>
+    <string name="kn2">الغروب</string>
+    <string name="k_line" formatted="true">أوقات الكراهة: %1$s</string>
+    <string name="k_warn" formatted="true">⚠ وقت كراهة: %1$s (%2$s–%3$s)</string>
+    <string name="k_now" formatted="true">⚠ الآن وقت كراهة: %1$s (%2$s–%3$s)</string>
+    <string name="k_sum" formatted="true">⚠ وقت كراهة: %1$s</string>
+    <string name="panel_title" formatted="true">المتبقي حتى %1$s</string>
+    <string name="adhan_fajr_title">أذان الفجر</string>
+    <string name="adhan_fajr_text">حان وقت أذان الفجر.</string>
+    <string name="reminder_default">تذكير</string>
+    <string name="alert_prayer_time">وقت الصلاة</string>
+    <string name="alert_approaching">اقترب وقت الصلاة</string>
+    <string name="alert_entered" formatted="true">حان وقت %1$s.</string>
+    <string name="alert_minutes" formatted="true">باقٍ %2$s دقيقة على %1$s.</string>
+    <string name="ch_ezan">الأذان (وقت الصلاة)</string>
+    <string name="ch_ezan_d">ينبّه بدخول وقت الصلاة بصوت الأذان</string>
+    <string name="ch_alarm">الأذان (بصوت المنبّه)</string>
+    <string name="ch_alarm_d">يُرفع الأذان عبر قناة المنبّه ويُسمع حتى في الوضع الصامت</string>
+    <string name="ch_def">وقت الصلاة (الصوت الافتراضي)</string>
+    <string name="ch_def_d">يعرض إشعارًا عند دخول وقت الصلاة</string>
+    <string name="ch_rem">تذكيرات الصلاة</string>
+    <string name="ch_rem_d">يذكّرك قبل وقت الصلاة المحدد بمدة معينة</string>
+    <string name="ch_silent">إشعارات صامتة</string>
+    <string name="ch_silent_d">تصل إشعارات الصلاة والتذكيرات بصمت</string>
+    <string name="ch_panel">لوحة المواقيت</string>
+    <string name="ch_panel_d">يعرض الوقت المتبقي للصلاة القادمة ومواقيت اليوم في شريط الإشعارات</string>
+    <string name="ch_playing">أثناء رفع الأذان</string>
+    <string name="ch_playing_d">يظهر أثناء تشغيل الأذان عبر مشغّل التطبيق</string>
+    <string name="stop_sound">إيقاف الصوت</string>
+    <string name="test_title">تجربة الأذان</string>
+    <string name="test_text">إعداد الصوت يعمل.</string>
+    <string name="w_default_title">وقت الصلاة</string>
+    <string name="w_stale">المواقيت غير محدّثة</string>
+    <string name="w_open_app">افتح التطبيق</string>
+    <string name="w_title_fmt" formatted="true">وقت %1$s</string>
+    <string name="wn_default">الصلاة</string>
+    <string name="wn_times">المواقيت</string>
+    <string name="wn_open">فتح</string>
+</resources>
