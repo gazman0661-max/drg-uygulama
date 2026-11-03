@@ -1,0 +1,86 @@
+name: dergah
+description: "Dergah-ı Kadirî - Ezan Vakti: Namaz vakitleri, kıble pusulası, kitap ve sohbet videoları uygulaması"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+  flutter: '>=3.35.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Dil desteği (TR / EN / AR): Material/Cupertino bileşenlerinin yerelleştirmesi ve RTL
+  flutter_localizations:
+    sdk: flutter
+
+  # Durum yönetimi
+  provider: ^6.1.5
+
+  # Ağ istekleri (Aladhan / Diyanet vakitleri API'si)
+  http: ^1.5.0
+
+  # Offline önbellek (localStorage karşılığı)
+  shared_preferences: ^2.5.3
+
+  # Konum (Kıble hesabı ve yaklaşık vakit hesabı için)
+  geolocator: ^14.0.2
+
+  # Pusula sensörü (Kıble sayfası)
+  flutter_compass: ^0.8.1
+
+  # Sesli okuma (Kitap sayfası - Text to Speech)
+
+  # Yerel bildirim + ezan sesi (arkaplanda çalışan alarm)
+  flutter_local_notifications: ^22.2.0
+
+  # YouTube "unlisted" video oynatma (Sohbetler sayfası)
+  url_launcher: ^6.3.2
+  # Gizli log ekranından kayıtları paylaşma
+  share_plus: ^11.0.0
+  in_app_update: ^4.2.3
+  firebase_core: ^4.2.1
+  firebase_analytics: ^12.0.4
+  firebase_crashlytics: ^5.0.4
+  youtube_player_flutter: ^9.1.1
+
+  # Hicri (Kameri) takvim - Diyanet'in Miladi'den Hicri'ye kaba çevirisi ile uyumlu
+  hijri: ^3.0.0
+
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+    - assets/book/
+    - assets/images/
+
+  # Yerel fontlar (SIL Open Font License; lisans dosyaları assets/fonts/ içinde)
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
+    - family: Cormorant Garamond
+      fonts:
+        - asset: assets/fonts/CormorantGaramond-Regular.ttf
+        - asset: assets/fonts/CormorantGaramond-Italic.ttf
+          style: italic
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter_18pt-Regular.ttf
+        - asset: assets/fonts/Inter_18pt-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter_18pt-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter_18pt-Bold.ttf
+          weight: 700
