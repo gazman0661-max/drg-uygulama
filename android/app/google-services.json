@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "757579154934",
+    "project_id": "dergah-i-kadiri",
+    "storage_bucket": "dergah-i-kadiri.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757579154934:android:79c0ac4074a59d78d0f3d7",
+        "android_client_info": {
+          "package_name": "com.dergah.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBuR8N3RZfvSmpSb4jeJWBkwUbyMW7QBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
